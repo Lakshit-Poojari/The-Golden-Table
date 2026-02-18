@@ -1,0 +1,44 @@
+.main-navbar{
+    background-color: #1E1E1E ;   /* Charcoal black */
+    color: #F8F5F0;              /* Ivory white */
+    border-bottom: 1px solid #9E7C19 !important;
+    height: 20%;
+    padding: 0 !important;
+}
+
+.navbar a {
+  color: #F8F5F0;
+  text-decoration: none;
+  margin: 0 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #C9A227;              /* Gold hover */
+}
+
+.navbar-toggler{
+  background-color: #C9A227 !important;
+}
+
+.navbar a:focus {
+  color: #C9A227 !important;
+  border-bottom: 2px solid #C9A227 !important;
+  padding-bottom: 4px;
+}
+
+.navbar {
+  backdrop-filter: blur(6px);
+  background-color: rgb(30, 30, 30);
+  font-family: 'Poppins', sans-serif;
+}
+.logo {
+    height: 108px !important;
+    width: 203px !important;
+}
+
+.main-logo {
+    width: 15% !important;
+}
+

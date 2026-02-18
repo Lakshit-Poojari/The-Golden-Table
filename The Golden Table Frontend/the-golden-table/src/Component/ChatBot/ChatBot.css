@@ -1,0 +1,234 @@
+.chat-toggle {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #C9A227;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  z-index: 1000;
+}
+
+.chat-window {
+  position: fixed;
+  bottom: 95px;
+  right: 25px;
+  width: 350px;
+  height: 500px;
+  background: #1E1E1E;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #2A2A2A;
+}
+
+.chat-header {
+  background: #141414;
+  color: #C9A227;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.chat-header button {
+  background: none;
+  border: none;
+  color: #C9A227;
+  cursor: pointer;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Message Row */
+.message-row {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message-row.user {
+  justify-content: flex-end;
+}
+
+.message-row.bot {
+  justify-content: flex-start;
+}
+
+/* Bot Icon */
+.bot-icon {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+/* Message Bubble */
+.message-bubble {
+  max-width: 75%;
+  padding: 10px 14px;
+  border-radius: 14px;
+  font-size: 14px;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+/* User Message */
+.user .message-bubble {
+  background: #C9A227;
+  color: #0F0F0F;
+}
+
+.chat-window {
+  position: fixed;
+  bottom: 95px;
+  right: 25px;
+  width: 350px;
+  height: 500px;
+  background: #1E1E1E;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #2A2A2A;
+  transition: all 0.3s ease;
+}
+
+/* Subtle Hover Glow */
+.chat-window:hover {
+  border: 1px solid #C9A227;
+  box-shadow:
+    0 0 10px rgba(201, 162, 39, 0.3),
+    0 0 25px rgba(201, 162, 39, 0.15);
+}
+
+/* Bot Message */
+.bot .message-bubble {
+  background: #2A2A2A;
+  color: #F8F5F0;
+  border: 1px solid #333;
+}
+
+.message-bubble p{
+  margin: 0 !important;
+}
+
+/* Links */
+.chat-link {
+  display: inline-block;
+  margin-top: 6px;
+  color: #C9A227;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.chat-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Input */
+.chat-input {
+  display: flex;
+  border-top: 1px solid #2A2A2A;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  background: #141414;
+  border: none;
+  color: #F8F5F0;
+  outline: none;
+}
+
+.chat-input button {
+  background: #C9A227;
+  border: none;
+  padding: 10px 15px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #0F0F0F;
+}
+
+/* ******* */
+
+.chat-toggle {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #1E1E1E;
+  color: #C9A227;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  cursor: pointer;
+  border: 1px solid #C9A227;
+  z-index: 1000;
+  transition: all 0.3s ease;
+
+  /* 🔥 Soft Constant Glow */
+  box-shadow:
+    0 0 8px rgba(201, 162, 39, 0.5),
+    0 0 18px rgba(201, 162, 39, 0.3),
+    0 8px 25px rgba(0,0,0,0.4);
+}
+
+/* ✨ Strong Glow on Hover */
+.chat-toggle:hover {
+  transform: scale(1.12);
+  box-shadow:
+    0 0 15px rgba(201, 162, 39, 0.9),
+    0 0 35px rgba(201, 162, 39, 0.6),
+    0 0 60px rgba(201, 162, 39, 0.4),
+    0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Click Effect */
+.chat-toggle:active {
+  transform: scale(0.95);
+}
+
+@keyframes glowPulse {
+  0% {
+    box-shadow:
+      0 0 6px rgba(201, 162, 39, 0.4),
+      0 0 15px rgba(201, 162, 39, 0.2);
+  }
+  50% {
+    box-shadow:
+      0 0 18px rgba(201, 162, 39, 0.9),
+      0 0 35px rgba(201, 162, 39, 0.5);
+  }
+  100% {
+    box-shadow:
+      0 0 6px rgba(201, 162, 39, 0.4),
+      0 0 15px rgba(201, 162, 39, 0.2);
+  }
+}
+
+.chat-toggle {
+  animation: glowPulse 2.5s infinite ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .chat-window{
+    width: 275px;
+    height: 310px;
+  }
+}

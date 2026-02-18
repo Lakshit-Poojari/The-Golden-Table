@@ -1,0 +1,134 @@
+/* Page wrapper */
+.staffbooking-main {
+  background-color: #0F0F0F;
+  min-height: 100vh;
+  padding: 40px 6%;
+  color: #F8F5F0;
+}
+
+/* Heading */
+.staffbooking-main h2 {
+  color: #C9A227;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+/* Back button */
+.staffbooking-main > button {
+  width: fit-content;
+  margin-bottom: 30px;
+  background-color: transparent;
+  color: #C9A227;
+  border: 1px solid #C9A227;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.staffbooking-main > button:hover {
+  background-color: #C9A227;
+  color: #121212;
+}
+
+/* Search section */
+.staffbooking-input {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.staffbooking-input input{
+  background-color: #1E1E1E;
+  color: #F8F5F0 !important;
+  border: 1px solid #333;
+}
+
+.staffbooking-input input::placeholder {
+  font-size: 13px;
+  color: #9A9A9A !important;
+}
+
+.staffbooking-input input:focus {
+  background-color: #1E1E1E;
+  border-color: #C9A227;
+  box-shadow: 0 0 0 2px rgba(201, 162, 39, 0.25);
+  outline: none;
+}
+
+.staffbooking-input .form-control {
+  flex: 1;
+}
+
+/* Search & clear buttons */
+.staffbooking-input button {
+  background-color: #2A2A2A;
+  color: #F8F5F0;
+  border: 1px solid #333;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.staffbooking-input button:hover {
+  background-color: #C9A227;
+  color: #F8F5F0;
+}
+
+/* No booking message */
+.staffbooking-main > p {
+  color: #B5B5B5;
+  margin-top: 20px;
+}
+
+/* Booking card */
+.staffbooking-main > div[key] {
+  background-color: #1E1E1E;
+  padding: 20px 24px;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+  margin-bottom: 24px;
+  max-width: 600px;
+}
+
+/* Booking details */
+.staffbooking-main p {
+  margin-bottom: 8px;
+  color: #D0D0D0;
+  font-size: 14px;
+}
+
+.staffbooking-main strong {
+  color: #F8F5F0;
+  font-weight: 500;
+}
+
+/* Status highlight */
+.staffbooking-main p:last-child {
+  margin-top: 10px;
+}
+
+/* Checked-in status */
+.staffbooking-main p:has(span),
+.staffbooking-main p:has(svg) {
+  color: #4CAF50;
+  font-weight: 500;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .staffbooking-input {
+    flex-direction: column;
+  }
+
+  .staffbooking-main {
+    padding: 30px 6%;
+  }
+}
+
+.form-control::placeholder {
+  font-size: 13px;      /* smaller placeholder */
+  color: #9A9A9A;       /* softer gray */
+}

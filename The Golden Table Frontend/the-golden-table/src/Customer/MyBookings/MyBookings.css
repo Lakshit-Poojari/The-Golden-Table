@@ -1,0 +1,109 @@
+.mybooking-main, .no-booking{
+    background-color: #0F0F0F !important;
+    text-align: center;
+    min-height: 85.6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: center;
+}
+
+.mybooking-main h2 {
+  color: #C9A227;
+  margin-bottom: 30px;
+  font-family: 'Playfair Display', serif;
+}
+
+.mybooking-main table {
+  width: 100%;
+  max-width: 900px;
+  border-collapse: collapse;
+  background-color: #1E1E1E;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+}
+
+.mybooking-main thead {
+  background-color: #151515;
+}
+
+.mybooking-main th {
+  color: #C9A227;
+  padding: 14px;
+  font-size: 14px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+.mybooking-main td {
+  color: #F8F5F0;
+  padding: 12px;
+  font-size: 14px;
+  border-bottom: 1px solid #2A2A2A;
+}
+
+.mybooking-main tbody tr:hover {
+  background-color: #232323;
+}
+
+.mybooking-main button {
+  background-color: transparent;
+  color: #E74C3C;
+  border: 1px solid #E74C3C;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.mybooking-main button:hover {
+  background-color: #E74C3C;
+  color: #121212;
+}
+
+.mybooking-main span {
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  table, thead, tbody, th, tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+  }
+
+  td::before {
+    font-weight: bold;
+    content: attr(data-label);
+  }
+}
+
+th {    
+  background-color: #141414; 
+  font-weight: 600;
+}
+
+.mybooking-main th
+ {
+    color: #C9A227;}
+
+.no-booking h2{
+  margin-top: 20px;
+}

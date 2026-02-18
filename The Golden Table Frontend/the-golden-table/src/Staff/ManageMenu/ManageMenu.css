@@ -1,0 +1,123 @@
+/* Page wrapper */
+.staff-page {
+  background-color: #0F0F0F;
+  min-height: 100vh;
+  padding: 40px 6%;
+  color: #F8F5F0;
+}
+
+/* Page title */
+.staff-page h1 {
+  color: #C9A227;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+/* Back button */
+.staff-page > button {
+  width: fit-content;
+  margin-bottom: 30px;
+  background-color: transparent;
+  color: #C9A227;
+  border: 1px solid #C9A227;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.staff-page > button:hover {
+  background-color: #C9A227;
+  color: #121212;
+}
+
+/* Upload card */
+.upload-card {
+  background-color: #1E1E1E;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+  max-width: 500px;
+}
+
+/* Upload heading */
+.upload-card h3 {
+  color: #C9A227;
+  margin-bottom: 20px;
+}
+
+/* Inputs & buttons spacing */
+.upload-card .form-control {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+/* Upload button */
+.upload-card button {
+  background-color: #C9A227;
+  color: #121212;
+  border: none;
+  padding: 10px 0;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.upload-card button:hover:not(:disabled) {
+  background-color: #B8951F;
+  transform: translateY(-2px);
+}
+
+.upload-card button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+/* Current menu section */
+.upload-card p {
+  margin-top: 10px;
+  color: #B5B5B5;
+}
+
+.upload-card a {
+  color: #C9A227;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.upload-card a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .staff-page {
+    padding: 30px 6%;
+  }
+}
+
+.file-input{
+  background-color: #1E1E1E !important;
+  color: #F8F5F0 !important;
+  border: 1px solid #333 !important;
+}
+
+.file-input::placeholder {
+  font-size: 13px;
+  color: #9A9A9A;
+  background-color: #0F0F0F !important;
+}
+
+.file-input:focus {
+  background-color: #1E1E1E !important;
+  border-color: #C9A227 !important;
+  box-shadow: 0 0 0 2px rgba(201, 162, 39, 0.25);
+  outline: none;
+}
+
+.file-input::file-selector-button{
+  background-color: #1E1E1E !important;
+  color: #F8F5F0 !important;
+}

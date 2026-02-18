@@ -1,0 +1,170 @@
+/* Page wrapper */
+.bookinglist-main {
+  background-color: #0F0F0F;
+  min-height: 100vh;
+  padding: 40px 6%;
+  color: #F8F5F0;
+}
+
+/* Header */
+.bookinglist-main > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.bookinglist-main h1 {
+  color: #C9A227;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Back button */
+.bookinglist-main > div:first-child button {
+  background-color: transparent;
+  color: #C9A227;
+  border: 1px solid #C9A227;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.bookinglist-main > div:first-child button:hover {
+  background-color: #C9A227;
+  color: #121212;
+}
+
+/* Search section */
+.bookinglist-main > div:nth-child(2) {
+  display: flex;
+  gap: 12px;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.bookinglist-main input {
+  flex: 1;
+  padding: 10px 12px;
+  background-color: #1E1E1E;
+  color: #F8F5F0;
+  border: 1px solid #333;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.bookinglist-main input::placeholder {
+  font-size: 13px;
+  color: #9A9A9A;
+}
+
+.bookinglist-main input:focus {
+  border-color: #C9A227;
+  box-shadow: 0 0 0 2px rgba(201, 162, 39, 0.25);
+  outline: none;
+}
+
+/* Search button */
+.bookinglist-main > div:nth-child(2) button {
+  background-color: #2A2A2A;
+  color: #F8F5F0;
+  border: 1px solid #333;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.bookinglist-main > div:nth-child(2) button:hover {
+  background-color: #C9A227;
+  color: #121212;
+}
+
+/* Table */
+.bookinglist-main table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1E1E1E;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+}
+
+/* Table header */
+.bookinglist-main thead {
+  background-color: #151515;
+}
+
+.bookinglist-main th {
+  padding: 14px;
+  font-size: 14px;
+  color: #C9A227;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+
+/* Table cells */
+.bookinglist-main td {
+  padding: 12px;
+  font-size: 14px;
+  color: #F8F5F0;
+  border-bottom: 1px solid #2A2A2A;
+  text-align: center;
+}
+
+/* Row hover */
+.bookinglist-main tbody tr:hover {
+  background-color: #232323;
+}
+
+/* Action buttons */
+.bookinglist-main td button {
+  background-color: transparent;
+  color: #C9A227;
+  border: 1px solid #C9A227;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  margin: 4px;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.bookinglist-main td button:hover {
+  background-color: #C9A227;
+  color: #121212;
+}
+
+/* Checked-in status */
+.bookinglist-main td span {
+  color: #4CAF50;
+  font-weight: 500;
+}
+
+/* No bookings row */
+.bookinglist-main tbody td[colspan] {
+  padding: 20px;
+  color: #B5B5B5;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .bookinglist-main {
+    padding: 30px 4%;
+  }
+
+  .bookinglist-main > div:first-child {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .bookinglist-main > div:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .bookinglist-main table {
+    font-size: 13px;
+  }
+}

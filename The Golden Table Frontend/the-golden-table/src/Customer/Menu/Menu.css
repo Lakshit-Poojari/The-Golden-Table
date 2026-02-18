@@ -1,0 +1,100 @@
+.menu-page {
+  background-color: #0F0F0F;
+  padding: 80px 10%;
+  color: #F8F5F0;
+  text-align: center;
+   min-height: 85.6vh !important;
+}
+
+/* Page title */
+.menu-page h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  color: #C9A227;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.menu-subtitle {
+  font-family: 'Poppins', sans-serif;
+  color: #CFCFCF;
+  margin-bottom: 50px;
+}
+
+/* Card container */
+.menu-card {
+  background-color: #1E1E1E;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.45),
+    0 1px 0 rgba(255, 255, 255, 0.03);
+  display: inline-block;
+  max-width: 500px;
+}
+
+/* Card text */
+.menu-card p {
+  font-family: 'Poppins', sans-serif;
+  color: #D0D0D0;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.menu-card a {
+  text-decoration: none;
+  padding: 12px 26px;
+  border-radius: 8px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #C9A227, #F1D27A);
+  color: #121212;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.menu-card a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(201, 162, 39, 0.5);
+}
+
+@media (max-width: 768px) {
+  .menu-page {
+    padding: 60px 6%;
+  }
+
+  .menu-page h1 {
+    font-size: 32px;
+  }
+}
+
+.menu-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at center, rgba(201, 162, 39, 0.08), transparent 55%),
+    #0F0F0F;
+}
+
+.menu-subtitle::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #C9A227;
+  margin: 20px auto 0;
+  opacity: 0.6;
+}
+
+.menu-card {
+  animation: fadeUp 2s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

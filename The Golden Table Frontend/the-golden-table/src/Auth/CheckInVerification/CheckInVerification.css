@@ -1,0 +1,81 @@
+/* Wrapper */
+.checkin-main {
+  background-color: #1E1E1E;
+  padding: 24px 26px;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+  margin-top: 16px;
+  max-width: 420px;
+}
+
+/* Title */
+.checkin-main h3 {
+  color: #C9A227;
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+
+/* Error message */
+.checkin-main p {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* OTP input */
+.checkin-main input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  letter-spacing: 4px; /* OTP style */
+
+  background-color: #0F0F0F;
+  color: #F8F5F0;
+
+  border: 1px solid #333;
+  border-radius: 8px;
+
+  margin-bottom: 12px;
+}
+
+.checkin-main input::placeholder {
+  font-size: 13px;
+  color: #9A9A9A;
+}
+
+.checkin-main input:focus {
+  border-color: #C9A227;
+  box-shadow: 0 0 0 2px rgba(201, 162, 39, 0.25);
+  outline: none;
+}
+
+/* Buttons */
+.checkin-main button {
+  width: 100%;
+  padding: 10px 0;
+
+  background-color: #C9A227;
+  color: #121212;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+/* Hover */
+.checkin-main button:hover:not(:disabled) {
+  background-color: #B8951F;
+  transform: translateY(-2px);
+}
+
+/* Disabled */
+.checkin-main button:disabled {
+  background-color: #555;
+  color: #AAA;
+  cursor: not-allowed;
+  transform: none;
+}

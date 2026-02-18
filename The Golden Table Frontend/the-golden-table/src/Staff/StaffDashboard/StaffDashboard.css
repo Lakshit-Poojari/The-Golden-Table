@@ -1,0 +1,136 @@
+/* Page wrapper */
+.staff-dashboard {
+  background-color: #0F0F0F;
+  min-height: 100vh;
+  padding: 40px 6%;
+  color: #F8F5F0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Header */
+.staff-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.staff-header h1 {
+  color: #C9A227;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Logout button */
+.btn {
+  background-color: transparent !important;
+  color: #C9A227 !important;
+  border: 1px solid #C9A227 !important;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #C9A227 !important;
+  color: #121212 !important;
+}
+
+/* Welcome section */
+.staff-welcome {
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+
+.staff-welcome h2 {
+  margin-bottom: 8px;
+}
+
+.staff-welcome p {
+  color: #B5B5B5;
+  line-height: 1.6;
+}
+
+/* Manager-only note */
+.manager-note {
+  margin-bottom: 30px;
+  padding: 20px 24px;
+  background-color: #1E1E1E;
+  border-left: 4px solid #C9A227;
+  border-radius: 12px;
+  max-width: 700px;
+}
+
+.manager-note h3 {
+  color: #C9A227;
+  margin-bottom: 6px;
+}
+
+.manager-note p {
+  color: #B5B5B5;
+  font-size: 14px;
+}
+
+/* Quick actions card */
+.quick-actions {
+  background-color: #1E1E1E;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+  max-width: 700px;
+}
+
+.quick-actions h2 {
+  color: #C9A227;
+  margin-bottom: 20px;
+}
+
+/* Buttons container */
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Action buttons */
+.action-buttons button {
+  flex: 1 1 200px;
+  background-color: #2A2A2A;
+  color: #F8F5F0;
+  border: 1px solid #333;
+  padding: 14px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.action-buttons button:hover {
+  background-color: #C9A227;
+  color: #121212;
+  transform: translateY(-2px);
+}
+
+/* Helper text */
+.quick-help {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #B5B5B5;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .staff-dashboard {
+    padding: 30px 6%;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+}
