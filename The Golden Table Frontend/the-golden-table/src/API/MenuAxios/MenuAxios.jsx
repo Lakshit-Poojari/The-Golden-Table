@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const MenuAxios = axios.create({
-  baseURL: "http://127.0.0.1:8000/menu/",
+  baseURL: "https://the-golden-table.onrender.com/menu/",
+  // baseURL: "http://127.0.0.1:8000/menu/",
 });
 
 /* Attach token automatically */

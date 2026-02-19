@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const StaffAxios = axios.create({
-  baseURL: "http://127.0.0.1:8000/staff/",
+  baseURL: "https://the-golden-table.onrender.com/staff/",
+  // baseURL: "http://127.0.0.1:8000/staff/",
   headers: {
     "Content-Type": "application/json",
   },
