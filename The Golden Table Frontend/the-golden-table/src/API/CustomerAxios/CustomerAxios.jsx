@@ -3,9 +3,9 @@ import axios from "axios";
 const CustomerAxios = axios.create({
   baseURL: "https://the-golden-table.onrender.com/customer/",
   // baseURL: "http://127.0.0.1:8000/customer/",
-  headers: {
-    "Content-Type": "application/json",
-  },
+  // headers: {
+  //   "Content-Type": "application/json",
+  // },
 });
 
 // 🔐 Attach JWT automatically
