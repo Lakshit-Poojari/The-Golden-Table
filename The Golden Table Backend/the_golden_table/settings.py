@@ -24,7 +24,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # DEBUG = True
 # ALLOWED_HOSTS = []
 
-DEBUG = os.getenv("DEBUG") == "True"
+DEBUG = os.getenv("DEBUG", "False") == "True"
 SEND_REAL_EMAIL = os.getenv("SEND_REAL_EMAIL") == "True"
 
 ALLOWED_HOSTS = ['*']
