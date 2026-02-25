@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 from pathlib import Path
 import os
 from dotenv import load_dotenv
+import dj_database_url
 
 load_dotenv()
 
@@ -104,11 +105,27 @@ WSGI_APPLICATION = 'the_golden_table.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }}
+if DEBUG:
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+
+    # If DATABASE_URL exists → use PostgreSQL (Render)
+else:
+    
+    DATABASES= {
+        'default' : dj_database_url.parse(
+            os.environ.get("DATABASE_URL"),
+
+        )
+        }
+
+
+    # postgresql://golden_table_user:rEVNd8Bk2frenmqEwADCIG9bgFuKv93L@dpg-d6fhiag8tnhs73crb30g-a/golden_table
 
 # CORS_ALLOW_ALL_ORIGINS = True
 
