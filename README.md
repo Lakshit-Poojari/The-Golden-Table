@@ -65,8 +65,9 @@ Customers can book tables in advance, while restaurant staff can review, verify,
 
 ## Authentication Details
 
-- OTP verification is implemented using SMTP  
-- Fully functional in local environment  
+- OTP-based user verification using SMTP  
+- Secure Forgot Password functionality via email verification  
+- JWT-based authentication for protected routes  
 
 ---
 
