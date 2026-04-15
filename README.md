@@ -1,107 +1,104 @@
-The Golden Table
+# The Golden Table
 
 A full-stack restaurant table booking system that allows customers to reserve tables online and enables restaurant staff to manage and verify bookings efficiently.
 
-Project Overview
+---
+
+## Project Overview
 
 The Golden Table simplifies the traditional restaurant reservation process by digitizing table bookings and management.
 
 Customers can book tables in advance, while restaurant staff can review, verify, and assign tables, ensuring a smooth dining experience.
 
-Features
-Customer Side
-User Registration & Login (OTP-based authentication)
-Browse available tables
-Book tables online
-Search and filter tables/products
-Add items to cart with quantity management
-Submit feedback with image upload
-Staff (Seller) Side
-Staff login system
-View and manage customer bookings
-Verify reservations
-Add, update, and manage table/product listings
-Tech Stack
-Frontend
-React.js
-Context API
-Backend
-Django
-Django REST Framework (DRF)
-Database
-SQLite
-Authentication
-JWT Authentication
-OTP-based Email Verification (SMTP)
-Deployment
-Render (Frontend deployed)
-Live Demo
+---
 
-Frontend:
-https://the-golden-table-frontend.onrender.com/
+## Features
 
-Note:
-Backend features (authentication & booking APIs) work perfectly in the local environment.
-Due to Render free-tier limitations (SMTP restrictions), OTP-based authentication is not functional in the deployed version.
+### Customer Side
+- User Registration & Login (OTP-based authentication)
+- Browse available tables
+- Book tables online
 
-Installation and Setup
-Clone Repository
-git clone https://github.com/your-username/the-golden-table.git
-cd the-golden-table
-Backend Setup
-cd backend
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
+### Staff Side
+- Role-based access control for staff users  
 
-Backend runs at:
-http://127.0.0.1:8000/
+#### Staff
+- View, manage, and verify customer bookings  
+- Approve or reject reservations  
+- Add, update, and manage table listings  
 
-Frontend Setup
-cd frontend
-npm install
-npm start
+#### Manager
+- Full access to all staff functionalities  
+- Add or remove menu   
+- Manage staff-related operations  
+---
 
-Frontend runs at:
-http://localhost:3000/
+## Tech Stack
 
-Project Structure
-the-golden-table/
-│
-├── backend/
-│   ├── customer_side/
-│   ├── seller_side/
-│   └── manage.py
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   └── App.js
-│
-└── README.md
-Authentication Details
-OTP verification is implemented using SMTP.
-Fully functional in local environment.
-Not working in deployed version due to Render SMTP restrictions.
-How It Works
-User registers and logs in
-User browses available tables
-User books a table
-Staff verifies the booking
-Staff assigns the table
-Future Improvements
-Deploy backend with SMTP support
-Add payment integration
-Real-time booking system
-Notifications (Email/SMS)
-UI/UX improvements
-Author
+### Frontend
+- React.js  
 
-Lakshit Poojari
-B.E. Information Technology
-Skills: Python, SQL, Power BI, Django, React
+## Frontend Dependencies
 
-Contribution
+- **axios** – For API requests  
+- **bootstrap** – UI styling framework  
+- **react** – Core frontend library  
+- **react-bootstrap** – Bootstrap components for React  
+- **react-datepicker** – Date selection for booking  
+- **react-dom** – DOM rendering  
+- **react-icons** – Icons for UI  
+- **react-router-dom** – Routing between pages  
+- **react-social-icons** – Social media icons  
 
-Contributions are welcome. Fork the repository and create a pull request.
+### Backend
+- Django  
+- Django REST Framework (DRF)  
+
+### Database
+- SQLite  
+
+### Authentication
+- JWT Authentication  
+- OTP-based Email Verification (SMTP)  
+
+---
+
+## Authentication Details
+
+- OTP verification is implemented using SMTP  
+- Fully functional in local environment  
+
+---
+
+## How It Works
+
+1. User registers and logs in  
+2. User browses available tables  
+3. User books a table  
+4. Staff verifies the booking  
+5. Staff assigns the table  
+
+---
+
+## Screenshots
+
+### Home Page
+![Home Page](screenshots/home.png)
+
+### Booking Page
+![Booking Page](screenshots/booking.png)
+
+### Cart / Selection Page
+![Cart Page](screenshots/cart.png)
+
+### Staff Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+
+---
+
+## Author
+
+Lakshit Poojari  
+B.E. Information Technology  
+Skills: Python, SQL, Power BI, Django, React  
