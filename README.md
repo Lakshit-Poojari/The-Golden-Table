@@ -169,10 +169,10 @@ Customers can book tables in advance, while restaurant staff can review, verify,
 ### 📧 Email Notifications
 
 #### Check-in OTP Email
-<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/checkinotpmail.jpeg" width="700"/>
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/checkinotpmail.jpeg" height = "550" width="400"/>
 
 #### Booking Confirmation Email
-<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/bookingconfirmationmail.jpeg" height = "500" width="400"/>
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/bookingconfirmationmail.jpeg" height = "550" width="400"/>
 
 ---
 
