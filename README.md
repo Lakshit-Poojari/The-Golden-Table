@@ -172,7 +172,7 @@ Customers can book tables in advance, while restaurant staff can review, verify,
 <img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/checkinotpmail.jpeg" width="700"/>
 
 #### Booking Confirmation Email
-<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/bookingconfirmationmail.jpeg" width="700"/>
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/bookingconfirmationmail.jpeg" height = "300" width="200"/>
 
 ---
 
