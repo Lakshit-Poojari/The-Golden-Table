@@ -83,18 +83,86 @@ Customers can book tables in advance, while restaurant staff can review, verify,
 
 ## Screenshots
 
-### Home Page
-![Home Page](screenshots/home.png)
+---
 
-### Booking Page
-![Booking Page](screenshots/booking.png)
+### 🌐 General Pages
 
-### Cart / Selection Page
-![Cart Page](screenshots/cart.png)
+#### Home Page
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/homepage.png" width="700"/>
 
-### Staff Dashboard
-![Dashboard](screenshots/dashboard.png)
+#### About Page
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/aboutpage.png" width="700"/>
 
+#### Contact Page
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/contact.png" width="700"/>
+
+#### Menu Page
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/menu.png" width="700"/>
+
+---
+
+### 👤 Customer Authentication
+
+#### Customer Login
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/customerlogin.png" width="700"/>
+
+#### Customer Register
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/customerregister.png" width="700"/>
+
+#### Forgot Password
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/forgotpassword.png" width="700"/>
+
+---
+
+### 🧑 Customer Features
+
+#### Booking Page
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/bookingpage.png" width="700"/>
+
+#### Booking List
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/bookinglist.png" width="700"/>
+
+#### Current Booking List
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/currentbookinglist.png" width="700"/>
+
+#### Profile Page
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/profile.png" width="700"/>
+
+#### Booking Status (Pending)
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/statuspending.png" width="700"/>
+
+---
+
+### 🤖 Additional Feature
+
+#### Chatbot
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/chatbot.png" width="700"/>
+
+---
+
+### 🧑‍🍳 Staff Panel
+
+#### Staff Login
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/stafflogin.png" width="700"/>
+
+#### Staff Dashboard
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/staffdashboard.png" width="700"/>
+
+#### Staff Menu Management
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/staffmenu.png" width="700"/>
+
+#### Booking Confirmation
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/staffbookingconfirmation.png" width="700"/>
+
+---
+
+### ✅ Verification & Check-in
+
+#### Check-in Status
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/checkinstatus.png" width="700"/>
+
+#### Check-in Verification
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/checkinverification.png" width="700"/>
 
 ---
 
