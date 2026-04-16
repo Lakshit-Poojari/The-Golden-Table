@@ -166,6 +166,16 @@ Customers can book tables in advance, while restaurant staff can review, verify,
 
 ---
 
+### 📧 Email Notifications
+
+#### Check-in OTP Email
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/checkinotpmail.png" width="700"/>
+
+#### Booking Confirmation Email
+<img src="./The Golden Table Frontend/the-golden-table/src/assets/ScreenShots/bookingconfirmationmail.png" width="700"/>
+
+---
+
 ## Author
 
 Lakshit Poojari  
